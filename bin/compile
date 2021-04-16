@@ -42,7 +42,7 @@ for FILENAME in $(cat ${BUILD_DIR}/.buildcache | sed '/^$/d'); do
   fi
 
   # copy files to cache
-  cp -r ${SRC} ${DEST}
+  cp -rp ${SRC} ${DEST}
 
   echo " ✓"
 done
